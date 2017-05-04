@@ -19,7 +19,39 @@
 
 <!-- start header.html-->
 <!-- open .header-->
-<header>
+<header class="head">
+
+    <div class="container">
+
+        <div class="head__logo">
+            <a href="/">
+                <img src="img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="head__form">
+            <form>
+                <input type="email" placeholder="E-mail" name="email">
+                <input type="password" placeholder="Пароль" name="password">
+                <a href="#">Вход <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                <div class="head__form-check-in">
+                    <a href="#">Забыли пароль </a>
+                    <span> | </span>
+                    <a href="#">Регистрация</a>
+                </div>
+            </form>
+
+        </div>
+        <div class="head__schedule">
+            <img src="img/work_day.png" alt="work_day">
+            <span>ПН-ПТ <br>9:00 - 18:00</span>
+            <span>СБ-ВС <br>Выходной</span>
+        </div>
+        <div class="head__basket">
+            <p><i class="fa fa-shopping-cart" aria-hidden="true"></i> Корзина</p>
+            <p>Товаров: <span>0</span> на сумму <span>0</span> руб.</p>
+            <a href="#">Оформить заказ</a>
+        </div>
+    </div>
 
 </header>
 <!-- close .header -->
@@ -48,7 +80,6 @@
 
 <!-- start html_close.html-->
 <script src='js/jquery-3.2.1.js' type="text/javascript"></script>
-
 <script src="js/script.min.js" type="text/javascript"></script>
 </body>
 </html>

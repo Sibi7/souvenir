@@ -1,0 +1,126 @@
+.head {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  background: #4996c9;
+  height: 130px;
+  &__logo {
+    display: block;
+    position: relative;
+    float: left;
+    width: 470px;
+    margin-top: 10px;
+    img {
+      width: 100%;
+      object-fit: cover;
+
+    }
+  }
+  &__form {
+    display: block;
+    position: relative;
+    float: left;
+    width: 245px;
+    margin-left: 100px;
+    input {
+      width: 100px;
+      margin-top: 20px;
+      height: 20px;
+      border-radius: 10px;
+      border: 0;
+      display: block;
+      float: left;
+      margin-right: 5px;
+      &:nth-child(2) {
+        width: 70px;
+      }
+    }
+    input[type='email'] {
+      padding-left: 10px;
+      font-size: 10px;
+      color: #424242;
+    }
+    input[type='password'] {
+      padding-left: 10px;
+      font-size: 10px;
+      color: #424242;
+    }
+    a {
+      font-size: 12px;
+      color: #fff;
+      font-family: $hBolb;
+      margin-top: 25px;
+      display: inline-block;
+
+    }
+    &-check-in {
+      display: block;
+      text-align: center;
+
+      a {
+        font-size: 10px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        display: inline-block;
+      }
+      span {
+        color: #fff;
+        font-size: 10px;
+
+      }
+    }
+  }
+  &__schedule {
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    display: block;
+    width: 120px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #fff;
+    img {
+      display: block;
+      float: left;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+    span {
+      display: block;
+      position: relative;
+      margin-left: 30px;
+      margin-top: 8px;
+    }
+  }
+  &__basket {
+    display: block;
+    position: relative;
+    float: right;
+    width: 170px;
+    color: #fff;
+    p {
+      margin-left: 22px;
+      font-size: 11px;
+
+      margin-bottom: 8px;
+    }
+    p:first-child {
+      font-family: $hBolb;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    a {
+      margin-left: 22px;
+      text-decoration: underline;
+      color: #002d53;
+      font-size: 12px;
+      font-family: $hBolb;
+    }
+  }
+}
