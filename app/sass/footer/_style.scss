@@ -1,0 +1,25 @@
+.footer{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  background: #e2e1e1;
+
+  &__logo{
+    width: 300px;
+    float: left;
+    display: block;
+    margin-left: 300px;
+    img{
+      object-fit: cover;
+
+    }
+  }
+  &__text{
+    display: block;
+    position: relative;
+    float: left;
+    width: 550px;
+    font-size: 9px;
+  }
+}

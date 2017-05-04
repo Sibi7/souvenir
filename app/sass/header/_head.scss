@@ -4,7 +4,6 @@
   float: left;
   width: 100%;
   background: #4996c9;
-  height: 130px;
   &__logo {
     display: block;
     position: relative;
@@ -157,7 +156,6 @@
     display: block;
     float: left;
     width: 100%;
-    height: 60px;
     background: #d1d0d0;
     ul{
       list-style: none;
@@ -183,6 +181,9 @@
          font-family: $hBolb;
          box-sizing: border-box;
          transition: 500ms ease;
+         .active{
+           background: #c60000;
+         }
          &:hover{
            background: #c60000;
            transition: 500ms ease;
@@ -194,4 +195,5 @@
       }
     }
   }
+
 }
