@@ -3,7 +3,9 @@
   position: relative;
   float: left;
   width: 280px;
+  height: 1817px;
   box-shadow: 5px 0 10px -3px rgba(50,50,50,.75);
+  z-index: 5;
   margin-right: 50px;
   ul{
     padding: 0;
@@ -54,7 +56,29 @@
       padding-right: 10px;
     }
   }
-
+  &__angle-up{
+    display: block;
+    position: absolute;
+    float: left;
+    bottom: 25px;
+    width: 100px;
+    height: 35px;
+    line-height: 30px;
+    transition: 300ms ease;
+    &:hover{
+      transition: 300ms ease;
+      transform: scale(1.03);
+    }
+    img{
+      width: 35px;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+    span{
+     margin-left: 10px;
+      color: #e2e1e1;
+    }
+  }
 }
 
 .content {
