@@ -3,18 +3,37 @@
   position: relative;
   float: left;
   width: 280px;
-  height: 1817px;
+  height: 100vw;
   box-shadow: 5px 0 10px -3px rgba(50,50,50,.75);
   z-index: 5;
   margin-right: 50px;
+  h3{
+    font-size: 12px;
+    font-weight: $hMedium;
+    text-transform: uppercase;
+  }
+  .title{
+    border-left: 2px solid #009bf5;
+    color: #4996c9;
+    text-transform: uppercase;
+    padding-left: 10px;
+    box-sizing: border-box;
+    .fa{
+      padding-left: 5px;
+    }
+  }
   ul{
     padding: 0;
     margin: 0;
     list-style: none;
+
     li{
       margin: 10px 0;
       font-size: 12px;
-      font-family: $hLight;
+    a{
+      font-family: $hMedium;
+      color: #333333;
+    }
     }
     img{
       width: 20px;
@@ -22,39 +41,13 @@
       margin-right: 10px;
     }
   }
-  .accordion {
-    color: #333333;
-    font-family: $hMedium;
-    text-transform: uppercase;
-    font-size: 12px;
-    margin-bottom: 21px;
-    display: inline-block;
-    margin-top: 50px;
-
-  }
-  .title{
-    display: block;
-    color: #4996c9;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-family: $hMedium;
-    border-left: 2px solid #4996c9;
-    padding-left: 10px;
-    box-sizing: border-box;
-  }
-  .title_lvl_two{
-    display: block;
-    color: #333;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-family: $hMedium;
-
-    box-sizing: border-box;
-    img{
-      width: 20px;
-      vertical-align: middle;
-      padding-right: 10px;
+  .lvl-two{
+    a{
+      font-weight: $hBolb;
     }
+    padding-left:  30px;
+    box-sizing: border-box;
+
   }
   &__angle-up{
     display: block;
@@ -79,6 +72,24 @@
       color: #e2e1e1;
     }
   }
+  .magnit{
+    color: #333333;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .pam{
+    color: #333333;
+    font-size: 12px;
+    text-transform: none;
+  }
+  .fa-angle-down{
+    float: right;
+    display: inline-block;
+    margin-right: 50px;
+  }
+}
+.sidebar .magnit {
+  font-family: $hBolb;
 }
 
 .content {
