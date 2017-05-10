@@ -1,0 +1,79 @@
+.contacts{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  background: #f9f8f8;
+  margin-left: -50px;
+  padding-right: 50px;
+  margin-top: 100px;
+  &__item{
+    display: block;
+    position: relative;
+    width: 26%;
+    margin-bottom: 35px;
+    float: left;
+    margin-left: 55px;
+    margin-top: 55px;
+    &__phone{
+      width: 245px;
+      height: 40px;
+      border-radius: 30px;
+      background: #ffffff;
+      img{
+        vertical-align: middle;
+        margin-left: 15px;
+        margin-right: 5px;
+      }
+      .sub{
+        width: 40px;
+        height: 40px;
+        background: #f14e23;
+        border-radius: 50%;
+        display: block;
+        float: right;
+      }
+      input{
+        line-height: 39px;
+        border-radius: 30px;
+        border: none;
+        font-size: 14px;
+        color: #9fa3a7;
+      }
+    }
+    h1{
+      color: #212121;
+      font-family: $hBlack;
+      font-size: 16px;
+    }
+    h2{
+      color: #212121;
+      font-family: $hBlack;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    a{
+      font-size: 16px;
+      font-family: $hRoman;
+      color: #6c6c6c;
+      line-height: 40px;
+    }
+    button{
+      width: 130px;
+      height: 30px;
+      border-radius: 30px;
+      background: #4996c9;
+      outline: none;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      font-family: $hMedium;
+      cursor: pointer;
+    }
+  }
+}

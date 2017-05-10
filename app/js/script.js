@@ -1,9 +1,15 @@
 $(document).ready(function () {
 
+    $( "#accordion" ).accordion({
+        active: 2,
+        collapsible: true,
+        icons: { "header": "ui-icon-caret-1-w", "activeHeader": "ui-icon-minus" }
+    });
 
-
-
-
+    $( "#accordion1" ).accordion({
+        active: 2,
+        collapsible: true
+    });
 
     // /*header mobile menu*/
     // var pull = $('#header-menu'),//блок с кнопкой мобильного меню
@@ -147,7 +153,61 @@ $(document).ready(function () {
     //     });
     // }
     // /*close scroll block*/
+    /*sidebar sub-menu*/
+    $('#accordion1 h3').on('click', function(){
+        $(this).removeAttr('href');
+        var element = $(this).parent('li');
+        if (element.hasClass('open')) {
+            element.removeClass('open');
+            element.find('li').removeClass('open');
+            element.find('ul').slideUp();
+            element.find('.triangle').css({transform: 'rotate(-90deg)'})
+        }
+        else {
+            element.addClass('open');
+            element.children('ul').slideDown();
+            element.siblings('li').children('ul').slideUp();
+            element.siblings('li').removeClass('open');
+            element.siblings('li').find('li').removeClass('open');
+            element.siblings('li').find('ul').slideUp();
+            element.find('.triangle').css({transform: 'rotate(0deg)'})
+        }
+    });
+    /*close sidebar sub-menu*/
+
+
+    $(document).on('click', '.plus', function () {
+        event.preventDefault();
+        var count = $('.product__content--counter').find('.number'),
+            val = parseInt($('.product__content--counter').find('.number').val());
+        if (val == 999) {
+            return false;
+        } else {
+            count.val(val + 1);
+            $('.js-single-addtocart').attr('data-quantity', count.val());
+            $('.js-single-favorites').attr('data-quantity', count.val());
+        }
+        return false;
+    });
+
+    $(document).on('click', '.minus', function () {
+        event.preventDefault();
+        var count = $('.product__content--counter').find('.number');
+        var counter = parseInt(count.val()) - 1;
+        counter = counter < 1 ? 1 : counter;
+        count.val(counter);
+        count.change();
+        $('.js-single-addtocart').attr('data-quantity', counter);
+        $('.js-single-favorites').attr('data-quantity', counter);
+        return false;
+    });
+
+    jQuery(function($){
+        $("#phone").mask("+7 (999) 999-9999");
+    });
+
 });
+
 
 // function fixedScroll(element, elementPosition, blockElement) {//функция фиксированногоблока, с селекторами элемента, его позиционирования и преграждающего блока
 //     var top = $(document).scrollTop(),//значение отступа прокрутки сверху для первого элемента

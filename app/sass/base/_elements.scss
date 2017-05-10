@@ -1,0 +1,186 @@
+.sidebar {
+  display: block;
+  position: relative;
+  float: left;
+  width: 280px;
+  box-shadow: 5px 0 10px -3px rgba(50,50,50,.75);
+  margin-right: 50px;
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+      margin: 10px 0;
+      font-size: 12px;
+      font-family: $hLight;
+    }
+    img{
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+  .accordion {
+    color: #333333;
+    font-family: $hMedium;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 21px;
+    display: inline-block;
+    margin-top: 50px;
+
+  }
+  .title{
+    display: block;
+    color: #4996c9;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: $hMedium;
+    border-left: 2px solid #4996c9;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .title_lvl_two{
+    display: block;
+    color: #333;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: $hMedium;
+
+    box-sizing: border-box;
+    img{
+      width: 20px;
+      vertical-align: middle;
+      padding-right: 10px;
+    }
+  }
+
+}
+
+.content {
+  display: block;
+  position: relative;
+  width: 820px;
+  float: left;
+  .wrapper{
+    float: left;
+    width: 100%;
+    display: block;
+    position: relative;
+    h1{
+      color: #282828;
+      font-size: 20px;
+      margin:  30px 18px;
+    }
+    .item-wrapper{
+      width: 220px;
+      float: left;
+      margin: 25px 25px;
+      display: block;
+      position: relative;
+      box-shadow: 0 0 20px rgba(0,0,0,.1);
+      text-align: left;
+      .item{
+        margin: 0 auto;
+        width: 126px;
+        height: auto;
+        img{
+          width: 100%;
+          margin-top: 20px;
+          object-fit: cover;
+        }
+        h1{
+          font-size: 17px;
+          color: #4996c9;
+          text-transform: uppercase;
+          font-family: $hBolb;
+          margin: 5px 0;
+          i{
+            margin-left: 10px;
+            cursor: pointer;
+            text-align: right;
+          }
+        }
+        h2{
+          color: #323232;
+          font-size: 11px;
+          font-family: $hBolb;
+          margin: 0;
+        }
+        .articul{
+          font-size: 11px;
+          font-family: $hLight;
+          color: #878787;
+          margin: 0;
+          font-style: italic;
+        }
+        h4{
+          margin: 5px 0;
+          font-size: 11px;
+        }
+        .price{
+          color: #f14e23;
+          font-family: $hBolb;
+          font-size: 18px;
+          margin: 0;
+          span{
+            font-size: 12px;
+            font-family: $hRoman;
+          }
+
+        }
+      }
+      .loupe{
+        width: 20px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        img{
+          margin-top: 0;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      button{
+        background: #f14e23;
+        border:  none;
+        outline: none;
+        color: #fff;
+        margin: 18px auto 40px auto;
+        display: block;
+        cursor: pointer;
+        border-radius: 30px;
+        width: 140px;
+        height: 35px;
+        position: relative;
+      }
+      .product__content--counter{
+        display: inline-block;
+        p{
+          font-size: 10px;
+          display: inline-block;
+        }
+        .price{
+          text-align: left;
+          color: #f14e23;
+        }
+      
+        input{
+          right: 82px;
+          bottom: 111px;
+          text-align: center;
+          overflow: hidden;
+          border-radius: 10px;
+          height: 15px;
+          border: 1px solid #e8e3e3;
+          color: #333333;
+          font-family: $hLight;
+          margin-left: 10px;
+          display: inline-block;
+        }
+
+      }
+    }
+  }
+}
