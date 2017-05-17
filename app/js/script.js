@@ -11,6 +11,8 @@ $(document).ready(function () {
         collapsible: true
     });
 
+
+
     // /*header mobile menu*/
     // var pull = $('#header-menu'),//блок с кнопкой мобильного меню
     //     menu = $('.nav-top'),//главное меню
