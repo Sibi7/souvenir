@@ -1,0 +1,49 @@
+.for-you{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  color: #282828;
+  &__item{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: 15px;
+    padding-bottom: 50px;
+    .h2 {
+      font-size: 20px;
+      font-family: $hLight;
+      line-height: 30px;
+    }
+    .h3 {
+      color: #c60000;
+      font-size: 20px;
+      font-family: $hBolb;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+    .ul {
+      list-style: none;
+      padding: 0;
+      li {
+        line-height: 36px;
+        font-size: 20px;
+        span{
+          font-family: $hBolb;
+        }
+      }
+    }
+    p{
+      color: #c60000;
+      font-style: italic;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 50px;
+    }
+    span{
+      font-size: 24px;
+      font-family: $hBolb;
+    }
+  }
+
+}
