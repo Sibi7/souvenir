@@ -10,6 +10,7 @@
     width: 100%;
     margin-left: 15px;
     padding-bottom: 50px;
+
     .h2 {
       font-size: 20px;
       font-family: $hLight;
@@ -35,15 +36,25 @@
     }
     p{
       color: #c60000;
+      margin-top: 50px;
       font-style: italic;
       font-size: 20px;
       line-height: 30px;
       margin-bottom: 50px;
+      span{
+        font-size: 22px;
+        color: #282828;
+        font-family: $annabelle;
+        font-weight: normal;
+        display: block;
+        margin-top: 22px;
+      }
     }
     span{
       font-size: 24px;
       font-family: $hBolb;
     }
+
   }
 
 }

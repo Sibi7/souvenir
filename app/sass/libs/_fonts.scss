@@ -3,8 +3,17 @@ $hBolb: 'HelveticaNeueCyrBold';
 $hRoman: 'HelveticaNeueCyrRoman';
 $hLight: 'HelveticaNeueCyrLight';
 $hBlack: 'HelveticaNeueCyrBlack';
+$annabelle: 'annabelle';
 
-
+@font-face {
+  font-family: 'annabelle';
+  src: url('../fonts/annabelle/annabelle.eot') format('embedded-opentype'),
+  url('../fonts/annabelle/annabelle.woff2') format('woff2'),
+  url('../fonts/annabelle/annabelle.woff') format('woff'),
+  url('../fonts/annabelle/annabelle.ttf') format('truetype'),
+  url('../fonts/annabelle/annabelle.svg') format('svg');
+  font-weight: normal;
+}
 @font-face {
   font-family: 'HelveticaNeueCyrMedium';
   src: url('../fonts/HelveticaNeueCyrMedium.eot') format('embedded-opentype'),
