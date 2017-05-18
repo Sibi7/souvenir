@@ -1,23 +1,130 @@
 @media only screen and (max-width: 1024px) {
-	
+
 }
 
 @media only screen and (max-width: 980px) {
-	
+
 }
 
 @media only screen and (max-width: 770px) {
-	
+
 }
 
 @media only screen and (max-width: 736px) {
-	
+  /************************* header *********************/
+  .head__logo {
+    width: 100%;
+  }
+  .head__form {
+    width: 100%;
+    margin-left: 0;
+    input {
+      width: 100%;
+      padding-right: 15px;
+      box-sizing: border-box;
+      &:nth-child(2) {
+        width: 100%;
+        padding-right: 15px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .head__form a {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    margin: 15px auto 5px auto;
+    text-align: center;
+  }
+  .head__form-check-in {
+    position: relative;
+    float: left;
+    width: 100%;
+    a {
+      display: inline-block;
+      float: none;
+      margin: 0;
+      width: auto;
+    }
+    span {
+      text-align: left;
+    }
+  }
+  .head__schedule {
+    width: 40%;
+    margin-left: 0;
+  }
+  .head__basket {
+    float: left;
+    width: 59%;
+  }
+  .head__contacts {
+    width: 100%;
+    .head__contacts-street {
+      position: relative;
+      left: 0;
+      margin-right: 0;
+      text-align: center;
+    }
+    .head__contacts-phone {
+      position: relative;
+      margin: 0;
+      line-height: 30px;
+      margin-left: 15px;
+      span {
+        float: right;
+        display: inline-block;
+        margin-right: 20px
+      }
+      img {
+        top: 0;
+        margin-top: 15px;
+
+      }
+    }
+  }
+  .head .head-menu {
+    display: none;
+  }
+  /*********************** end header ******************/
+
+  /************************* sidebar *********************/
+  .sidebar {
+    display: none;
+  }
+  /*********************** end sidebar ******************/
+
+  /*********************** content ******************/
+  .content {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    .wrapper {
+      h1 {
+        margin: 15px 0 0 0;
+        text-align: center;
+      }
+      .item-wrapper {
+        width: 100%;
+        margin: 15px 0;
+      }
+      .contacts {
+        background: #f9f8f8;
+        margin-left: 0;
+        padding-right: 0;
+        margin-top: 30px;
+      }
+    }
+  }
+  /*********************** end content ******************/
 }
 
 @media only screen and (max-width: 500px) {
-	
+
 }
 
 @media only screen and (max-width: 320px) {
-	
+
 }
