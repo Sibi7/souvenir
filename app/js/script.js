@@ -297,5 +297,7 @@ $(document).ready(function(){
             $(".head-menu").css("borderBottomWidth","1px");
         });
     });
-
+});
+$(function () {
+   $('#sidebar').mmenu();
 });

@@ -8,11 +8,45 @@
 
 @media only screen and (max-width: 770px) {
 
+  /*********************** header ******************/
+  .head .head-menu {
+    position: fixed;
+    display: none;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(73, 150, 201, .8);
+    .container{
+      padding: 0;
+      ul{
+        width: 100%;
+        margin-top: 30%;
+        li {
+          width: 100%;
+          a{
+            border: 0;
+            width: 100%;
+            margin-right: -15px;
+          }
+        }
+      }
+    }
+
+
+
+  }
+  /*********************** end header ******************/
+  /************************* sidebar *********************/
+  .sidebar {
+    display: none;
+  }
+  /*********************** end sidebar ******************/
 }
 
 @media only screen and (max-width: 736px) {
 
-
+}
 @media only screen and (max-width: 500px) {
   /************************* header *********************/
   .head__logo {
@@ -87,8 +121,8 @@
       }
     }
   }
-  .head .head-menu {
-
+  .content .wrapper h1 {
+    float: none;
   }
   .head .head-menu {
     position: fixed;
@@ -191,8 +225,6 @@
   /*********************** end footer ******************/
 
 }
-}
-
 @media only screen and (max-width: 320px) {
   .contacts__item__phone {
     width: 100%;
