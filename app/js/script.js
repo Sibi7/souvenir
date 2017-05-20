@@ -281,3 +281,21 @@ $(function () {
 //         element.removeClass('fixed');
 //     }
 // }
+$(document).ready(function () {
+    var link =$('.menu-link');
+    var link_active = $('.menu-link_active');
+
+    link.click(function () {
+        link.toggleClass('menu-link_active');
+    })
+});
+$(document).ready(function(){
+
+    $(".menu-link").click(function(){
+        $(".head-menu").css("borderBottomWidth","3px");
+        $(".head-menu").slideToggle(300,function(){
+            $(".head-menu").css("borderBottomWidth","1px");
+        });
+    });
+
+});
