@@ -3,66 +3,105 @@
   position: relative;
   float: left;
   width: 100%;
-
-  &__gallery {
-    width: 49%;
-    position: relative;
-    display: block;
-    float: left;
-    margin-top: 40px;
-    margin-left: 15px;
-  }
-  .fotorama {
-    border: 1px solid #e8e8e8;
-  }
-  .description .descriptions {
-    font-size: 13px;
-  }
-  &__description {
-    width: 49%;
+  font-family: $hRoman;
+  &__gallery{
     display: block;
     position: relative;
     float: left;
+    width: 50%;
+    padding-left: 15px;
+    box-sizing: border-box;
     margin-top: 40px;
-
-    &__text {
+    font-family: $hRoman;
+  }
+  &__description{
+    display: block;
+    position: relative;
+    font-family: $hRoman;
+    float: left;
+    width: 50%;
+    margin-top: 40px;
+    color: #333333;
+    &__img{
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 145px;
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  h2{
+    font-size: 16px;
+    font-family: $hBolb;
+    margin: 0;
+  }
+    span{
+      color: #c60000;
+      font-size: 10px;
+    }
+    h3{
+      font-size: 14px;
+      font-weight: normal;
+    }
+    &__characteristic{
       display: block;
       position: relative;
-      float: left;
-      width: 100%;
-      margin-left: 50px;
-      img {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 38%;
-      }
-      .characteristics {
-        strong {
-          color: #333333;
+      h4{
+        margin: 0;
+        font-size: 13px;
+        font-weight: normal;
+        span{
           font-size: 13px;
+          color: #333;
+          font-weight: bold;
+        }
+      }
+
+    }
+    &__specification{
+      display: block;
+      position: relative;
+      p{
+        font-size: 13px;
+        span{
+          font-weight: bold;
+          color: #333;
+          font-size: 13px;
+        }
+        i{
+          font-size: 10px;
         }
       }
     }
-    h2 {
-      font-size: 16px;
-      color: #333333;
-      font-family: $hBolb;
-      margin: 0;
-    }
-    span {
-      color: #f05025;
-      font-size: 10px;
-    }
-    h3 {
-      font-size: 14px;
-      color: #333;
-      font-family: $hRoman;
+    &__price{
+      display: block;
+      position: relative;
+      h3{
+        font-size: 15px;
+        font-family: $hBolb;
+        margin: 0;
+        span{
+          font-size: 18px;
+          color: #f05025;
+        }
+      }
+      button{
+        width: 220px;
+        height: 36px;
+        background: #f05025;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        border-radius: 30px;
+        margin-top: 23px;
+        cursor: pointer;
+      }
     }
   }
-}
-
-.fotorama__wrap {
-  margin: 0 auto;
 }
